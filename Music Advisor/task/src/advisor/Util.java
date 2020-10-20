@@ -14,9 +14,9 @@ import java.util.Scanner;
 public class Util {
     private static String AUTH_SERVER = "https://accounts.spotify.com";
     public static  String API_SERVER = "https://api.spotify.com";
-    private static String REDIRECT_URI = "http://localhost:8080";
-    private static String CLIENT_ID = "a7254441bc474bd6adf67eed4d885e44";
-    private static String SECRET_ID = "b2373bfe88cd449db9d34421118dc875";
+    private static final String REDIRECT_URI = "http://localhost:8080";
+    private static final String CLIENT_ID = "a7254441bc474bd6adf67eed4d885e44";
+    private static final String SECRET_ID = "b2373bfe88cd449db9d34421118dc875";
     public static final String AUTHORIZE_PART = "/authorize";
     public static final String RESPONSE_TYPE = "code";
     public static final String TOKEN_PART = "/api/token";
@@ -58,17 +58,17 @@ public class Util {
         httpServer.createContext("/",
                 exchange -> {
                     String query = exchange.getRequestURI().getQuery();
-                    String result;
+                    String result = null;
                     if (query != null && query.contains("code")) {
                         code = query.substring(5);
-                        result = "code received";
+                        result = "Got the code. Return back to your program.";
                     } else {
-                        result = "Not found authorization code. Try again.";
+                        result = "Authorization code not found. Try again.";
                     }
                     exchange.sendResponseHeaders(200, result.length());
                     exchange.getResponseBody().write(result.getBytes());
                     exchange.getResponseBody().close();
-                    System.out.println(result);
+                    //System.out.println(result);
                 }
             );
                     while (code.equals("")) {

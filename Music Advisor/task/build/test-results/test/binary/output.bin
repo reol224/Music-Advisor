@@ -1,38 +1,35 @@
 [1;31m
 Start test 1[0m
 > auth
-‰https://accounts.spotify.com/authorize?client_id=http://localhost:8080&redirect_uri=a7254441bc474bd6adf67eed4d885e44&response_type=code
++use this link to request the access code:
+ƒhttp://127.0.0.1:45678/authorize?client_id=a7254441bc474bd6adf67eed4d885e44&redirect_uri=http://localhost:8080&response_type=code
+waiting for code...
+@Tester: making requests to redirect uri: http://localhost:8080
+BTester: done request 1: Authorization code not found. Try again.
+BTester: done request 2: Authorization code not found. Try again.
+DTester: done request 3: Got the code. Return back to your program.
+)Making http request for access_token...
+
+response:
+f{"access_token":"456456","token_type":"Bearer","expires_in":3600,"refresh_token":"567567","scope":""}
 ---SUCCESS---
+> featured
+---FEATURED---
+Mellow Morning
+Wake Up and Smell the Coffee
+Monday Motivation
+Songs to Sing in the Shower
 > exit
 ---GOODBYE!---
 [1;31m
 Start test 2[0m
-> new
+> featured
 )Please, provide access for application.
 > exit
 ---GOODBYE!---
 [1;31m
 Start test 3[0m
-> featured
-)Please, provide access for application.
-> exit
----GOODBYE!---
-[1;31m
-Start test 4[0m
-> auth
-‰https://accounts.spotify.com/authorize?client_id=http://localhost:8080&redirect_uri=a7254441bc474bd6adf67eed4d885e44&response_type=code
----SUCCESS---
 > new
----NEW RELEASES---
-"Mountains [Sia, Diplo, Labrinth]
-Runaway [Lil Peep]
-)The Greatest Show [Panic! At The Disco]
-All Out Life [Slipknot]
-> featured
----FEATURED---
-Mellow Morning
-Wake Up and Smell the Coffee
-Monday Motivation
-Songs to Sing in the Shower
+)Please, provide access for application.
 > exit
 ---GOODBYE!---
