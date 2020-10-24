@@ -1,0 +1,26 @@
+type: code
+custom_name: How many type variables defined?
+files:
+- name: src/Main.java
+  visible: true
+  text: "// Do not remove imports\nimport java.util.Scanner;\n\nclass TypeVariablesInspector\
+    \ {\n    public void printTypeVariablesCount(TestClass obj, String methodName)\
+    \ throws Exception {\n        // Add implementation here \n    }\n}"
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11184
+status: Failed
+feedback:
+  message: |
+    Failed test #1 of 5. Wrong answer
+
+    This is a sample test from the problem statement!
+
+    Test input:
+    <T> void singleTypeMethod
+    Correct output:
+    1
+
+    Your code output:
+    0
+  time: Fri, 23 Oct 2020 09:18:26 UTC
+record: -1

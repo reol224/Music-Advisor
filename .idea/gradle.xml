@@ -13,14 +13,31 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Music Advisor/task" />
             <option value="$PROJECT_DIR$/Problems/An anonymous class with a single method" />
+            <option value="$PROJECT_DIR$/Problems/Boxes are not just objects!" />
             <option value="$PROJECT_DIR$/Problems/Breakfast Decorator" />
+            <option value="$PROJECT_DIR$/Problems/Check for null" />
             <option value="$PROJECT_DIR$/Problems/Check the given numbers are different" />
             <option value="$PROJECT_DIR$/Problems/Coffee Decorator" />
             <option value="$PROJECT_DIR$/Problems/Concat all strings without digits" />
+            <option value="$PROJECT_DIR$/Problems/Correct the usage of non-generic class" />
+            <option value="$PROJECT_DIR$/Problems/How many type variables defined" />
+            <option value="$PROJECT_DIR$/Problems/Initialize an object of a generic class" />
+            <option value="$PROJECT_DIR$/Problems/Invert an array" />
+            <option value="$PROJECT_DIR$/Problems/List multiplicator" />
+            <option value="$PROJECT_DIR$/Problems/Number holder" />
+            <option value="$PROJECT_DIR$/Problems/Packing backeries" />
+            <option value="$PROJECT_DIR$/Problems/Pastry packing optimization" />
+            <option value="$PROJECT_DIR$/Problems/Pets and boxes" />
+            <option value="$PROJECT_DIR$/Problems/Pets in boxes" />
+            <option value="$PROJECT_DIR$/Problems/Photocopiers" />
             <option value="$PROJECT_DIR$/Problems/Pizza Decorator" />
+            <option value="$PROJECT_DIR$/Problems/Print content" />
             <option value="$PROJECT_DIR$/Problems/Returning from a method" />
             <option value="$PROJECT_DIR$/Problems/Returning values from an anonymous class" />
             <option value="$PROJECT_DIR$/Problems/String reverser" />
+            <option value="$PROJECT_DIR$/Problems/The first element" />
+            <option value="$PROJECT_DIR$/Problems/Violator" />
+            <option value="$PROJECT_DIR$/Problems/What is an upper bound" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>

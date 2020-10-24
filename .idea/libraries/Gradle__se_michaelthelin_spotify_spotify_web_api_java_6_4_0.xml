@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: se.michaelthelin.spotify:spotify-web-api-java:6.4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/se.michaelthelin.spotify/spotify-web-api-java/6.4.0/28afe7a583b857f832c9fe6295b021b81d41f7bd/spotify-web-api-java-6.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/se.michaelthelin.spotify/spotify-web-api-java/6.4.0/f273056c73fdff4e53f62adc6002310231a2db3a/spotify-web-api-java-6.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -9,10 +9,13 @@ mainClassName = 'advisor.Main'
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     compile 'com.google.code.gson:gson:+'
+    compile 'se.michaelthelin.spotify:spotify-web-api-java:6.4.0'
+
 }
 
 jar {
