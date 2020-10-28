@@ -20,5 +20,14 @@
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents.core5:httpcore5-h2:5.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents.core5:httpcore5:5.0.1" level="project" />
     <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.13" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: net.dv8tion:JDA:4.2.0_210">
+        <CLASSES>
+          <root url="file://$APPLICATION_HOME_DIR$/jbr/bin/Could not find net.dv8tion:JDA:4.2.0_210.&#13;&#10;Searched in the following locations:&#13;&#10;  - https:/repo.maven.apache.org/maven2/net/dv8tion/JDA/4.2.0_210/JDA-4.2.0_210.pom&#13;&#10;  - https:/jitpack.io/net/dv8tion/JDA/4.2.0_210/JDA-4.2.0_210.pom&#13;&#10;Required by:&#13;&#10;    project :Music_Advisor-task" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

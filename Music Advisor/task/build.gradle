@@ -1,3 +1,13 @@
+//plugins {
+//    id 'org.springframework.boot' version '2.3.4.RELEASE'
+//    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+//    id 'java'
+//}
+//configurations {
+//    compileOnly {
+//        extendsFrom annotationProcessor
+//    }
+//}
 apply plugin: 'java'
 apply plugin: 'application'
 
@@ -11,11 +21,28 @@ repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
 }
+test {
+    useJUnitPlatform()
+}
+
 
 dependencies {
     compile 'com.google.code.gson:gson:+'
     compile 'se.michaelthelin.spotify:spotify-web-api-java:6.4.0'
-
+    compile 'net.dv8tion:JDA:4.2.0_210'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+//    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+//    implementation 'org.springframework.boot:spring-boot-starter-web'
+//    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+//    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+//    compileOnly 'org.projectlombok:lombok'
+//    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+//    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+//    annotationProcessor 'org.projectlombok:lombok'
+//    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+//        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+//    }
+//    testImplementation 'io.projectreactor:reactor-test'
 }
 
 jar {

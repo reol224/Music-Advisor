@@ -1,9 +1,14 @@
 package advisor;
 
+//import org.springframework.boot.SpringApplication;
+//import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import java.io.IOException;
 
+//@SpringBootApplication
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
+        //SpringApplication.run(Main.class, args);
         if (args.length > 1) {
             if(args[0].contains("-access")){
             Util.setAuthServer(args[1]);

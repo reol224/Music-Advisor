@@ -15,6 +15,9 @@ public class Actions {
     private static final HttpClient client = HttpClient.newBuilder().build();
     private static final Map<String, String> categoriesId = new LinkedHashMap<>();
     private static List<String> output = new ArrayList<>();
+    private static final List<String> name = new ArrayList<>();
+    private static final List<String> artist = new ArrayList<>();
+    private static final List<String> link = new ArrayList<>();
 
 
     public static void accessToken(String accessServer) throws IOException, InterruptedException {
@@ -35,10 +38,56 @@ public class Actions {
         System.out.println("Success!");
     }
 
-    public static List<String> getNewReleases() throws IOException, InterruptedException {
+    public static void spotifyRequestNewNOTWORKINGEITHER() throws IOException, InterruptedException {
+
+        // Parsing received JSON
+
+        List<JsonObject> objects = new ArrayList<>();
+        //String json = spotifyRequestAuth(apiPath);
+        JsonObject jo = JsonParser.parseString(sendGetRequest("new-releases")).getAsJsonObject();
+        JsonObject albums = jo.get("albums").getAsJsonObject();
+        JsonArray newReleasesArray = albums.getAsJsonArray("items");
+
+        for (int i = 0; i < newReleasesArray.size(); i++) {
+            objects.add(newReleasesArray.get(i).getAsJsonObject());
+        }
+
+        // Printing data to user
+
+        for (JsonObject object : objects) {
+
+            // Getting URL data
+
+            JsonObject externalUrl = object.get("external_urls").getAsJsonObject();
+
+            // Getting artists data
+
+            JsonArray artists = object.getAsJsonArray("artists");
+            StringBuilder artistsString = new StringBuilder();
+            List<JsonObject> artistsNames = new ArrayList<>();
+            for (int i = 0; i < artists.size(); i++) {
+                artistsNames.add(artists.get(i).getAsJsonObject());
+            }
+            artistsString.append("[");
+            for (JsonObject artist : artistsNames) {
+                artistsString.append(artist.get("name")).append(", ");
+            }
+            artistsString.replace(artistsString.length() - 2, artistsString.length(), "");
+            artistsString.append("]");
+
+            name.add(object.get("name").getAsString());
+            artist.add(artistsString.toString().replace("\"", ""));
+            link.add(externalUrl.get("spotify").toString().replace("\"", ""));
+
+        }
+    }
+
+
+        public static List<String> getNewReleases() throws IOException, InterruptedException {
         JsonObject jo = JsonParser.parseString(sendGetRequest("new-releases")).getAsJsonObject();
         JsonObject albums = jo.getAsJsonObject("albums");
         JsonArray albumArray = albums.getAsJsonArray("items");
+
         List<String> musiciansNames = new ArrayList<>();
         output.clear();
         for (JsonElement album : albumArray.getAsJsonArray()) {

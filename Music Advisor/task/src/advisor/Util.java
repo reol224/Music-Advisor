@@ -83,6 +83,7 @@ public class Util {
 //                        System.out.println(DENIED_AUTH);
 //                    }
                     UsingTheWrapper.getListOfNewReleases_Sync();
+                    //Actions.spotifyRequestNewNOTWORKINGEITHER();
 
                     break;
 

@@ -34,6 +34,7 @@
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents.core5:httpcore5-h2:5.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents.core5:httpcore5:5.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.assertj:assertj-core:3.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: net.dv8tion:JDA:4.2.0_210" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.easytesting:fest-util:1.2.5" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="Music_Advisor.Music_Advisor-task.main" />
