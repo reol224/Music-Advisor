@@ -13,8 +13,8 @@ public class Util {
     public static String AUTH_SERVER = "https://accounts.spotify.com";
     public static String API_SERVER = "https://api.spotify.com"; //resource server
     public static final String REDIRECT_URI = "http://localhost:8080";
-    public static final String CLIENT_ID = "a7254441bc474bd6adf67eed4d885e44";
-    public static final String SECRET_ID = "180566bc1f024a53bfd09080fdd237f4";
+    public static final String CLIENT_ID = "";
+    public static final String SECRET_ID = "";
     public static final String AUTHORIZE_PART = "/authorize";
     public static final String RESPONSE_TYPE = "code";
     public static final String TOKEN_PART = "/api/token";
