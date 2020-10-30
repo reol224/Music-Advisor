@@ -81,11 +81,11 @@ public class ServerUtil {
         if(fullToken.contains("access_token")){
             Util.accessToken = fullToken.substring(17,179); //always 162 chars
         }
-        if(fullToken.contains("refresh_token")){
-            Util.refreshToken = fullToken.substring(238,369); //always 131 chars
-        }
+//        if(fullToken.contains("refresh_token")){
+//            Util.refreshToken = fullToken.substring(238,369); //always 131 chars
+//        }
         System.out.println("Access code is : " + Util.accessToken);
-        System.out.println("Refresh token is : " + Util.refreshToken);
+        //System.out.println("Refresh token is : " + Util.refreshToken);
         System.out.println("response:\n" + fullToken + "\n" + "Success!");
         //System.out.println("Success!");
 

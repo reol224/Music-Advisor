@@ -79,6 +79,8 @@ public class Actions {
             artist.add(artistsString.toString().replace("\"", ""));
             link.add(externalUrl.get("spotify").toString().replace("\"", ""));
 
+            System.out.println(name + "\n" + artist + "\n" + link);
+
         }
     }
 
@@ -88,16 +90,19 @@ public class Actions {
         JsonObject albums = jo.getAsJsonObject("albums");
         JsonArray albumArray = albums.getAsJsonArray("items");
 
-        List<String> musiciansNames = new ArrayList<>();
+        List<JsonElement> musiciansNames = new ArrayList<>();
         output.clear();
         for (JsonElement album : albumArray.getAsJsonArray()) {
             for (JsonElement artist : album.getAsJsonObject().getAsJsonArray("artists")) {
-                musiciansNames.add(artist.getAsJsonObject().get("name").getAsString());
+                musiciansNames.add(artist.getAsJsonObject().get("name"));
             }
-            output.add(album.getAsJsonObject().get("name").getAsString() + "\n" + musiciansNames.toString() + "\n" +
-                    album.getAsJsonObject().get("external_urls").getAsJsonObject().get("spotify").getAsString() + "\n");
+            output.add(album.getAsJsonObject().get("name") + "\n" + musiciansNames + "\n" +
+                    album.getAsJsonObject().get("external_urls").getAsJsonObject().get("spotify") + "\n");
+
             musiciansNames.clear();
+
         }
+        System.out.print(output + "\n");
         return output;
     }
 
@@ -109,6 +114,7 @@ public class Actions {
             output.add(playlist.getAsJsonObject().get("name").getAsString() + "\n" +
                     playlist.getAsJsonObject().get("external_urls").getAsJsonObject().get("spotify").getAsString() + "\n");
         }
+        System.out.print(output);
         return output;
     }
 
@@ -126,13 +132,13 @@ public class Actions {
         for (JsonElement hobby : jo.getAsJsonArray("hobbies")) {
             hobbies.add(hobby.getAsString());
         }
-        //System.out.println(age);
+        System.out.println(age);
 
-        UsingTheWrapper.getListOfNewReleases_Sync();
     }
 
     public static List<String> getCategories() throws IOException, InterruptedException {
         saveCategories();
+        System.out.print(categoriesId.keySet() + "\n");
         return new ArrayList<>(categoriesId.keySet());
     }
 
@@ -168,6 +174,7 @@ public class Actions {
         } else {
             System.out.println(jo.getAsJsonObject("error").get("message").getAsString());
         }
+        System.out.print(output + "\n");
         return output;
     }
     static void takeNewReleases() throws IOException, InterruptedException {

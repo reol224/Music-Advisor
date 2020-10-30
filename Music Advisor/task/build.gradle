@@ -29,7 +29,7 @@ test {
 dependencies {
     compile 'com.google.code.gson:gson:+'
     compile 'se.michaelthelin.spotify:spotify-web-api-java:6.4.0'
-    compile 'net.dv8tion:JDA:4.2.0_210'
+    //compile 'net.dv8tion:JDA:4.2.0_210'
 //    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 //    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 //    implementation 'org.springframework.boot:spring-boot-starter-web'

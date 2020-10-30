@@ -8,3 +8,13 @@ Music Advisor/String and fiddlesticks/
 Music Advisor/task/lesson-info.yaml
 Music Advisor/Useful connections/
 Music Advisor/test/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+# IntelliJ IDEA settings
+.idea/

@@ -14,7 +14,7 @@ public class Util {
     public static String API_SERVER = "https://api.spotify.com"; //resource server
     public static final String REDIRECT_URI = "http://localhost:8080";
     public static final String CLIENT_ID = "a7254441bc474bd6adf67eed4d885e44";
-    public static final String SECRET_ID = "b2373bfe88cd449db9d34421118dc875";
+    public static final String SECRET_ID = "180566bc1f024a53bfd09080fdd237f4";
     public static final String AUTHORIZE_PART = "/authorize";
     public static final String RESPONSE_TYPE = "code";
     public static final String TOKEN_PART = "/api/token";
@@ -82,7 +82,8 @@ public class Util {
 //                    }else{
 //                        System.out.println(DENIED_AUTH);
 //                    }
-                    UsingTheWrapper.getListOfNewReleases_Sync();
+                    //UsingTheWrapper.getListOfNewReleases_Sync();
+                    Actions.getNewReleases();
                     //Actions.spotifyRequestNewNOTWORKINGEITHER();
 
                     break;
@@ -93,8 +94,8 @@ public class Util {
 //                    } else {
 //                        System.out.println(DENIED_AUTH);
 //                    }
-                    //Actions.takeFeatured();
-                    UsingTheWrapper.getListOfFeaturedPlaylists_Sync();
+                    Actions.takeFeatured();
+                    //UsingTheWrapper.getListOfFeaturedPlaylists_Sync();
 
                     break;
 
@@ -104,8 +105,8 @@ public class Util {
 //                    } else {
 //                        System.out.println(DENIED_AUTH);
 //                    }
-                    //Actions.takeCategories();
-                    UsingTheWrapper.getListOfCategories_Sync();
+                    Actions.getCategories();
+                    //UsingTheWrapper.getListOfCategories_Sync();
                     break;
 
                 //case "playlist":
@@ -127,8 +128,8 @@ public class Util {
 
                 default:
                     if (input.startsWith("playlists")) {
-                        //takePlaylists(input);
-                        UsingTheWrapper.getListOfCurrentUsersPlaylists_Sync();
+                        takePlaylists(input);
+                        //UsingTheWrapper.getListOfCurrentUsersPlaylists_Sync();
                     }
                     break;
             }

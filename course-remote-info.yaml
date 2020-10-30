@@ -3,6 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/210107/additional_files.json
   is_template_based: false
   use_ide: true
+update_date: Fri, 30 Oct 2020 06:11:33 UTC
 stages:
 - id: 335
   step: 5477
@@ -76,6 +77,8 @@ topics:
     theory_id: 6865
   - title: Introduction to OOP
     theory_id: 3614
+  - title: Functional decomposition
+    theory_id: 10570
   - title: Introduction to operating systems
     theory_id: 9704
   - title: Command line overview
@@ -90,6 +93,8 @@ topics:
     theory_id: 3504
   - title: Defining methods
     theory_id: 3590
+  - title: The main method
+    theory_id: 3489
   - title: Write, compile, and run
     theory_id: 3739
   - title: JVM, JRE, and JDK
